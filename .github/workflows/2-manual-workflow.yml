@@ -1,0 +1,14 @@
+name: Manula Workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  manula-workflow:
+    runs-on: windows-latest
+
+    steps: 
+      - name: Maniual step
+        run: |
+          echo "Hello Maniula Workflow"
+          echo "Maniual Workflow GitHub Action"  
