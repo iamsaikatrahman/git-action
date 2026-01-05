@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      -name: First step
-      run: | 
-        echo "Hello World"
-        echo "Hello Again!"
+      - name: First step
+        run: | 
+          echo "Hello World"
+          echo "Hello Again!"
