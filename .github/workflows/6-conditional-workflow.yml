@@ -1,0 +1,14 @@
+name: Conditional Workflow
+
+on:
+  push:
+    paths:
+      - "backend/**"
+
+jobs:
+  conditional-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Buld Backend Image
+        run: echo "When Backend file change only then work this action"
+
