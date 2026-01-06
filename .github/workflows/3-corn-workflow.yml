@@ -1,18 +1,18 @@
-name: Corn Workflow
+name: Cron Workflow
 
-on: 
+on:
   schedule:
-    - corn: '*/1 * * * *'
-  push: 
-    branchs:
-      - main 
+    - cron: '*/1 * * * *'   # runs every 1 minute
+  push:
+    branches:
+      - main
 
 jobs:
-  corn-workflow:
+  cron-workflow:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Corn step
+      - name: Cron step
         run: |
-          echo "Hello Corn workflow"
+          echo "Hello Cron workflow"
           echo "Hello world"
