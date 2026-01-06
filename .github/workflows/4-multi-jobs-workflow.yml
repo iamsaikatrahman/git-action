@@ -1,0 +1,21 @@
+name: Multi Jobs Workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  first-workflow-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First Workflow Jobs
+        run: |
+          echo "Hello First Workflow job"
+
+  second-workflow-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Second Workflow Jobs
+        run: |
+          echo "Hello Second Workflow job"          
