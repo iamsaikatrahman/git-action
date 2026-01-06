@@ -1,0 +1,18 @@
+name: Corn Workflow
+
+on: 
+  schedule:
+    - corn: '*/1 * * * *'
+  push: 
+    branchs:
+      - main 
+
+jobs:
+  corn-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Corn step
+        run: |
+          echo "Hello Corn workflow"
+          echo "Hello world"
