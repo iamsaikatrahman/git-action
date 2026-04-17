@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-
       - name: Checkout Code
         uses: actions/checkout@v6
 
@@ -15,7 +14,7 @@ jobs:
         run: |
           echo "Hello Script Workflow"
           echo "This is a script workflow example"  
-          
+
       - name: Run a script
         run: |
           python script.py
