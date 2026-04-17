@@ -18,3 +18,7 @@ jobs:
       - name: Run a script
         run: |
           python script.py
+
+      - name: Dockerhub Login
+        run: |
+          echo "${{ secrets.DOCKERHUB_PASSWORD }}" 
