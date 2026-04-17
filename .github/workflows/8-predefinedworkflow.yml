@@ -11,3 +11,12 @@ jobs:
       - name: Node Js Version
         run: |
           echo "Node Js version: $(node -v)"
+
+      - name: Setup Node Js
+        uses: actions/setup-node@v6  
+        with:
+          node-version: '24' 
+
+      - name: Node Js Version after setup
+        run: |
+          echo "Node Js version after setup: $(node -v)"   
