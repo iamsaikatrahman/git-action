@@ -9,5 +9,5 @@ jobs:
 
     steps:
       - name: Node Js Version
-        run:
+        run: |
           echo "Node Js version: $(node -v)"
