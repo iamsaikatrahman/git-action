@@ -1,0 +1,13 @@
+name: Predefined Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  predefined-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Node Js Version
+        run:
+          echo "Node Js version: $(node -v)"
